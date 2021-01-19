@@ -2,6 +2,7 @@
   box-sizing: border-box;
   background-color: rgb (244, 244, 244);
   color: #333;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 10px;
 }
 
@@ -14,12 +15,7 @@
   margin: 0 auto;
   max-width: 1000px;
   padding: 40px;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 40px;
+  text-align: center;
 }
 
 .title {
@@ -45,6 +41,11 @@
   margin-bottom: 1rem;
 }
 
+.input:focus,
+.button:focus {
+  outline: none;
+}
+
 .button {
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
@@ -57,7 +58,7 @@
 }
 
 .button:hover {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .card-list {
@@ -90,4 +91,22 @@
   .card-list {
     column-count: 1;
   }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  color: rgb(7, 7, 7);
+  background-image: linear-gradient(white, rgb(94, 93, 93));
+}
+
+footer span,
+p {
+  color: rgb(7, 7, 7);
+  padding-right: 14px;
 }

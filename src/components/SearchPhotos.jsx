@@ -1,11 +1,13 @@
 import React, {useState } from "react";
 import Unsplash, { toJson } from "unsplash-js";
 
+const API_KEY = process.env.REACT_APP_API_KEY
+
 const unsplash = new Unsplash({
-  accessKey:"AGvoql3AFmYeogoOWSyGhi-fAKRAztGym03yQkBtRKk"
+  accessKey:API_KEY
 })
 
-export default function SearchPhotos() {
+const SearchPhotos = () => {
 
   const [query, setQuery] = useState("");
   // console.log('query :>> ', query);
@@ -53,3 +55,5 @@ export default function SearchPhotos() {
     </>
   );
 }
+
+export default SearchPhotos;
